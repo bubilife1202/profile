@@ -13,7 +13,8 @@ import {
   TrendingUp,
   Clock,
   MessageCircle,
-  ArrowRight
+  ArrowRight,
+  Package
 } from 'lucide-react'
 import './index.css'
 
@@ -87,7 +88,7 @@ export default function App() {
                   <Play className="w-4 h-4 md:w-5 md:h-5 text-orange-400" />
                 </div>
                 <div>
-                  <p className="font-semibold text-base md:text-lg">'이거 진짜 되나요?'</p>
+                  <p className="font-semibold text-base md:text-lg">블루오션 키워드 발굴 시연</p>
                   <p className="text-xs md:text-sm text-zinc-500">시연 영상</p>
                 </div>
               </div>
@@ -107,7 +108,7 @@ export default function App() {
                   <Monitor className="w-4 h-4 md:w-5 md:h-5 text-blue-400" />
                 </div>
                 <div>
-                  <p className="font-semibold text-base md:text-lg">프로그램 실제 작동</p>
+                  <p className="font-semibold text-base md:text-lg">AI 대본 생성 실제 구동 화면</p>
                   <p className="text-xs md:text-sm text-zinc-500">작동 화면</p>
                 </div>
               </div>
@@ -135,75 +136,20 @@ export default function App() {
           </div>
 
           <div className="product-grid">
-            {/* ===== FREE ===== */}
+            {/* ===== 39,900원 - 블루오션 키워드 파인더 ===== */}
             <div className="card product-card">
               <div className="flex items-center justify-between mb-6 md:mb-8">
-                <div className="feature-icon w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-emerald-500/10">
-                  <Gift className="w-6 h-6 md:w-7 md:h-7 text-emerald-400" />
+                <div className="feature-icon w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-zinc-500/10">
+                  <Target className="w-6 h-6 md:w-7 md:h-7 text-zinc-400" />
                 </div>
-                <span className="badge badge-emerald">입문용</span>
-              </div>
-
-              <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">무료 데이터 맛보기</h3>
-
-              <div className="flex items-baseline gap-2 md:gap-3 mb-3 md:mb-4">
-                <span className="price text-emerald-400">0원</span>
-                <span className="price-old">19,000원</span>
-              </div>
-
-              <p className="text-sm md:text-base text-zinc-400 mb-6 md:mb-8 leading-relaxed">
-                12월 유튜브 떡상 영상 30개를 무료로 확인하고 감을 잡으세요.
-              </p>
-
-              <ul className="feature-list mb-8 md:mb-10 flex-grow">
-                <li className="feature-item">
-                  <div className="feature-icon bg-emerald-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
-                  </div>
-                  12월 떡상 영상 30개
-                </li>
-                <li className="feature-item">
-                  <div className="feature-icon bg-emerald-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
-                  </div>
-                  엑셀 파일 즉시 다운로드
-                </li>
-                <li className="feature-item">
-                  <div className="feature-icon bg-emerald-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
-                  </div>
-                  비용 부담 0원
-                </li>
-              </ul>
-
-              <a
-                href="https://litt.ly/reels_code_official/sale/XdbLaGW"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-lg btn-ghost btn-emerald w-full mt-auto"
-              >
-                <Download className="w-5 h-5" />
-                무료 다운로드
-              </a>
-            </div>
-
-            {/* ===== BEST ===== */}
-            <div className="card card-featured product-card relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="badge badge-best">BEST</span>
-              </div>
-
-              <div className="flex items-center justify-between mb-6 md:mb-8 mt-2">
-                <div className="feature-icon w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20">
-                  <Target className="w-6 h-6 md:w-7 md:h-7 text-blue-400" />
-                </div>
-                <span className="badge badge-purple">가성비 끝판왕</span>
+                <span className="badge">입문용</span>
               </div>
 
               <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">블루오션 키워드 파인더</h3>
 
               <div className="flex items-baseline gap-2 md:gap-3 mb-3 md:mb-4">
-                <span className="price gradient-text">39,900원</span>
+                <span className="price text-white">39,900원</span>
+                <span className="text-sm text-zinc-500">평생 소장</span>
               </div>
 
               <p className="text-sm md:text-base text-zinc-400 mb-6 md:mb-8 leading-relaxed">
@@ -212,28 +158,28 @@ export default function App() {
 
               <ul className="feature-list mb-8 md:mb-10 flex-grow">
                 <li className="feature-item">
-                  <div className="feature-icon bg-yellow-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
+                  <div className="feature-icon bg-cyan-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-cyan-400" />
                   </div>
-                  키워드 채굴기(Windows) 영구소장
+                  <span className="text-zinc-300">키워드 채굴기(Windows) 영구소장</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-blue-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
+                  <div className="feature-icon bg-cyan-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-cyan-400" />
                   </div>
-                  '빈집(꿀통)' 자동 발굴
+                  <span className="text-zinc-300">'빈집(꿀통)' 자동 발굴</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-purple-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-purple-400" />
+                  <div className="feature-icon bg-cyan-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-cyan-400" />
                   </div>
-                  12월 떡상 데이터 232개
+                  <span className="text-zinc-300">12월 떡상 데이터 232개</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-pink-500/10">
-                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-pink-400" />
+                  <div className="feature-icon bg-cyan-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-cyan-400" />
                   </div>
-                  AI 심층 분석집
+                  <span className="text-zinc-300">AI 심층 분석집</span>
                 </li>
               </ul>
 
@@ -241,14 +187,76 @@ export default function App() {
                 href="https://litt.ly/reels_code_official/sale/aeYrvgz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-lg btn-primary w-full mt-auto"
+                className="btn btn-lg btn-secondary w-full mt-auto"
               >
-                평생 소장하기
+                39,900원에 시작하기
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
 
-            {/* ===== PRO ===== */}
+            {/* ===== 199,000원 - 올인원 대본 패키지 (BEST) ===== */}
+            <div className="card card-featured product-card relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="badge badge-best">BEST</span>
+              </div>
+
+              <div className="flex items-center justify-between mb-6 md:mb-8 mt-2">
+                <div className="feature-icon w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20">
+                  <Package className="w-6 h-6 md:w-7 md:h-7 text-purple-400" />
+                </div>
+                <span className="badge badge-purple">MD 추천</span>
+              </div>
+
+              <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">올인원 대본 패키지</h3>
+
+              <div className="flex items-baseline gap-2 md:gap-3 mb-3 md:mb-4">
+                <span className="price gradient-text">199,000원</span>
+                <span className="text-sm text-zinc-500">평생 소장</span>
+              </div>
+
+              <p className="text-sm md:text-base text-zinc-400 mb-6 md:mb-8 leading-relaxed">
+                대본 작성부터 트렌드 분석까지. 콘텐츠 제작에 필요한 모든 것.
+              </p>
+
+              <ul className="feature-list mb-8 md:mb-10 flex-grow">
+                <li className="feature-item">
+                  <div className="feature-icon bg-yellow-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
+                  </div>
+                  <span className="text-zinc-200 font-medium">떡상 족보 데이터 752개</span>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon bg-yellow-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
+                  </div>
+                  <span className="text-zinc-200 font-medium">대본 자동 완성 툴 제공</span>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon bg-yellow-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
+                  </div>
+                  <span className="text-zinc-200 font-medium">트렌드 키워드 분석집</span>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon bg-yellow-500/10">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
+                  </div>
+                  <span className="text-zinc-200 font-medium">업데이트 평생 무료</span>
+                </li>
+              </ul>
+
+              <a
+                href="https://litt.ly/reels_code_official/sale/4CvCp94"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-lg btn-primary w-full mt-auto"
+              >
+                199,000원에 시작하기
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+
+            {/* ===== 299,000원 - AI 쇼츠 레이더 PRO ===== */}
             <div className="card product-card">
               <div className="flex items-center justify-between mb-6 md:mb-8">
                 <div className="feature-icon w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-blue-500/10">
@@ -261,6 +269,7 @@ export default function App() {
 
               <div className="flex items-baseline gap-2 md:gap-3 mb-3 md:mb-4">
                 <span className="price text-blue-400">299,000원</span>
+                <span className="text-sm text-zinc-500">평생 소장</span>
               </div>
 
               <p className="text-sm md:text-base text-zinc-400 mb-6 md:mb-8 leading-relaxed">
@@ -270,27 +279,27 @@ export default function App() {
               <ul className="feature-list mb-8 md:mb-10 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
-                    <Brain className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
                   </div>
-                  AI 실시간 트렌드 감지
+                  <span className="text-zinc-300">AI 실시간 트렌드 감지</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
-                    <FileText className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
                   </div>
-                  떡상 족보 752개 파일 무료 증정
+                  <span className="text-zinc-300">떡상 족보 752개 파일 무료 증정</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
-                    <Clock className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
                   </div>
-                  1초 만에 대본 생성
+                  <span className="text-zinc-300">1초 만에 대본 생성</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
-                    <TrendingUp className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
                   </div>
-                  업데이트 평생 무료
+                  <span className="text-zinc-300">업데이트 평생 무료</span>
                 </li>
               </ul>
 
@@ -298,31 +307,28 @@ export default function App() {
                 href="https://litt.ly/reels_code_official/sale/0LVLXwr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-lg btn-ghost btn-blue w-full mt-auto"
+                className="btn btn-lg btn-secondary w-full mt-auto"
               >
-                <Sparkles className="w-5 h-5" />
-                솔루션 도입하기
+                299,000원에 시작하기
+                <ArrowRight className="w-5 h-5" />
               </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ==================== ADDITIONAL ==================== */}
-      <section className="py-8 md:py-12">
-        <div className="container">
-          <div className="card text-center content-max py-8 md:py-10">
-            <p className="text-base md:text-lg text-zinc-300 mb-4 md:mb-6">
-              아직 AI 솔루션은 부담스럽고, 대본 작성만 필요하신가요?
-            </p>
+          {/* ===== 무료 체험 배너 ===== */}
+          <div className="mt-10 md:mt-14 text-center">
             <a
-              href="https://litt.ly/reels_code_official/sale/4CvCp94"
+              href="https://litt.ly/reels_code_official/sale/XdbLaGW"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-base md:text-lg text-purple-400 hover:text-purple-300 transition-colors font-semibold"
+              className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group"
             >
-              족보 752개 + 대본 완성 툴 (199,000원) 보러가기
-              <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+              <Gift className="w-4 h-4" />
+              <span>아직 고민되시나요?</span>
+              <span className="text-cyan-400 group-hover:text-cyan-300 font-medium">
+                무료 체험판 데이터 먼저 받아보기
+              </span>
+              <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
