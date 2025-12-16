@@ -417,10 +417,10 @@ export default function App() {
       <div className="divider" />
 
       {/* ==================== FOOTER ==================== */}
-      <footer style={{marginTop: '100px', paddingBottom: '80px'}}>
+      <footer style={{marginTop: '60px', paddingBottom: '80px'}}>
         <div className="container">
           <div className="text-center content-max">
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold" style={{marginBottom: '32px'}}>
               궁금한 점이 있으신가요?
             </h3>
 
@@ -434,7 +434,7 @@ export default function App() {
               카카오톡 1:1 문의하기
             </a>
 
-            <p className="mt-10 text-sm" style={{color: '#888888'}}>
+            <p style={{marginTop: '48px', fontSize: '14px', color: '#888888'}}>
               © 2025 Reels Code. All rights reserved.
             </p>
           </div>
