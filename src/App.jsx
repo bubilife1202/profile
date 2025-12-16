@@ -359,7 +359,7 @@ export default function App() {
               className="free-trial-banner"
             >
               <Gift className="w-5 h-5" />
-              <span>결제 전, 무료 데이터 먼저 확인하세요</span>
+              <span>구독자 100명인데 조회수 10만? 12월 알고리즘이 선택한 '기적의 영상' 232개 (무료)</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
