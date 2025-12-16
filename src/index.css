@@ -11,7 +11,7 @@
   --accent-purple: #8b5cf6;
   --accent-emerald: #10b981;
   --accent-mint: #00FFCC;
-  --space-section: 72px;
+  --space-section: 120px;
 }
 
 *, *::before, *::after {
@@ -281,37 +281,40 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* 프라이싱 카드 - 넉넉한 패딩 40-50px */
+/* 프라이싱 카드 - 패딩 40px 30px (상하 40, 좌우 30) */
 .card.product-card {
-  padding: 36px 28px 40px;
+  padding: 40px 30px;
 }
 
 @media (min-width: 768px) {
   .card.product-card {
-    padding: 44px 36px 48px;
+    padding: 40px 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .card.product-card {
-    padding: 48px 40px 52px;
+    padding: 40px 30px;
   }
 }
 
-/* 비디오 카드 - 내부 여백 30px+ */
+/* 비디오 카드 - 내부 여백 30px */
 .card.video-card {
-  padding: 28px;
+  padding: 30px;
+  padding-top: 30px;
 }
 
 @media (min-width: 768px) {
   .card.video-card {
-    padding: 32px;
+    padding: 30px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .card.video-card {
-    padding: 36px;
+    padding: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -414,7 +417,8 @@ body {
 .section {
   position: relative;
   z-index: 1;
-  padding: var(--space-section) 0;
+  padding: 0;
+  margin-bottom: 120px;
 }
 
 /* 비디오 섹션 헤더 - 40px 간격 */
@@ -426,14 +430,14 @@ body {
   margin-bottom: 40px;
 }
 
-/* 프라이싱 섹션 헤더 - 간격 줄임 */
+/* 프라이싱 섹션 헤더 - 60px 간격 */
 .section-header-compact {
-  margin-bottom: 36px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 768px) {
   .section-header-compact {
-    margin-bottom: 44px;
+    margin-bottom: 60px;
   }
 }
 
@@ -441,12 +445,12 @@ body {
 .feature-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 @media (min-width: 768px) {
   .feature-list {
-    gap: 16px;
+    gap: 12px;
   }
 }
 
@@ -557,12 +561,14 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  padding: clamp(100px, 16vw, 140px) 0 clamp(60px, 10vw, 80px);
+  padding: clamp(100px, 16vw, 140px) 0 0;
+  margin-bottom: 120px;
 }
 
 @media (min-width: 768px) {
   .hero {
-    padding: clamp(120px, 18vw, 160px) 0 clamp(72px, 12vw, 100px);
+    padding: clamp(120px, 18vw, 160px) 0 0;
+    margin-bottom: 120px;
   }
 }
 
@@ -703,14 +709,14 @@ body {
 
 /* ===== FAQ ACCORDION ===== */
 .faq-section {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .faq-item {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   overflow: hidden;
 }
 
@@ -750,9 +756,14 @@ body {
 }
 
 .comparison-card {
+  height: 120px;
   padding: 24px;
   border-radius: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .comparison-card.old {

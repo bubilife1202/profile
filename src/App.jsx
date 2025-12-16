@@ -44,19 +44,19 @@ export default function App() {
       <section className="hero" style={{paddingTop: '120px'}}>
         <div className="container">
           <div className="text-center content-max">
-            <h1 className="animate-fade-in delay-1 heading-hero mb-8 md:mb-10">
+            <h1 className="animate-fade-in delay-1 heading-hero" style={{marginBottom: '24px'}}>
               구독자 0명도 터지는
               <br />
               <span className="gradient-text">알고리즘 치트키</span>
             </h1>
 
-            <p className="animate-fade-in delay-2 text-body-lg mb-12 md:mb-14">
+            <p className="animate-fade-in delay-2 text-body-lg" style={{marginBottom: '40px'}}>
               매달 나가는 유료 툴 비용은 그만.
               <br />
               단 한 번의 결제로 평생 쓰는 분석 도구와 떡상 데이터를 드립니다.
             </p>
 
-            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#products" className="btn btn-xl btn-primary">
                 평생 소장하기
                 <ArrowRight className="w-5 h-5" />
@@ -72,7 +72,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="animate-fade-in delay-4 mt-6">
+            <div className="animate-fade-in delay-4" style={{marginTop: '16px'}}>
               <span className="badge badge-amber">
                 <Zap className="w-4 h-4" />
                 하루 선착순 100명 무료 체험 가능
@@ -132,7 +132,7 @@ export default function App() {
       <div className="divider" />
 
       {/* ==================== PRODUCTS ==================== */}
-      <section id="products" className="section">
+      <section id="products" className="section" style={{marginBottom: '80px'}}>
         <div className="container">
           <div className="section-header section-header-compact content-max">
             <h2 className="heading-section">입문자부터 전문가까지</h2>
@@ -168,7 +168,7 @@ export default function App() {
                 Windows 전용
               </div>
 
-              <ul className="feature-list mb-10 flex-grow">
+              <ul className="feature-list flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
@@ -200,6 +200,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-lg btn-secondary w-full"
+                style={{marginTop: '32px'}}
               >
                 39,900원에 시작하기
                 <ArrowRight className="w-5 h-5" />
@@ -229,7 +230,7 @@ export default function App() {
                 대본 작성부터 트렌드 분석까지. 콘텐츠 제작에 필요한 모든 것.
               </p>
 
-              <ul className="feature-list mb-10 flex-grow">
+              <ul className="feature-list flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
@@ -261,6 +262,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-lg btn-primary w-full"
+                style={{marginTop: '32px'}}
               >
                 199,000원에 시작하기
                 <ArrowRight className="w-5 h-5" />
@@ -287,7 +289,7 @@ export default function App() {
                 직원 3명 몫을 혼자 처리합니다. 월 900만원 아끼는 자동화 솔루션.
               </p>
 
-              <ul className="feature-list mb-10 flex-grow">
+              <ul className="feature-list flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
@@ -319,6 +321,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-lg btn-secondary w-full"
+                style={{marginTop: '32px'}}
               >
                 299,000원에 시작하기
                 <ArrowRight className="w-5 h-5" />
@@ -327,7 +330,7 @@ export default function App() {
           </div>
 
           {/* ===== 무료 체험 배너 - Full Width ===== */}
-          <div className="mt-12 md:mt-16">
+          <div style={{marginTop: '80px', marginBottom: '40px'}}>
             <a
               href="https://litt.ly/reels_code_official/sale/XdbLaGW"
               target="_blank"
@@ -364,7 +367,7 @@ export default function App() {
 
           {/* ===== FAQ ===== */}
           <div className="faq-section content-max">
-            <h3 className="text-xl md:text-2xl font-bold text-center mb-8">자주 묻는 질문</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-center" style={{marginBottom: '40px'}}>자주 묻는 질문</h3>
 
             <div className="faq-item">
               <div className="faq-question">
