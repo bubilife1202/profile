@@ -167,6 +167,30 @@ export default function App() {
 
       <div className="divider" />
 
+      {/* ==================== ACHIEVEMENT ==================== */}
+      <section className="section">
+        <div className="container">
+          <div className="achievement-section content-max">
+            <p className="achievement-label">실제 성과</p>
+            <h2 className="achievement-title">
+              나도 <span style={{color: '#22d3ee'}}>200만</span> 터졌습니다.
+            </h2>
+            <p className="achievement-desc">
+              릴스코드 알고리즘 분석으로 달성한 실제 조회수입니다.
+            </p>
+            <div className="achievement-image-wrapper">
+              <img
+                src="/achievement-2m.png"
+                alt="200만 조회수 달성"
+                className="achievement-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="divider" />
+
       {/* ==================== STORY ==================== */}
       <section className="section">
         <div className="container">
