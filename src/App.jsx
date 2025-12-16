@@ -433,17 +433,33 @@ export default function App() {
           </div>
 
           {/* ===== 비교표 ===== */}
-          <div className="comparison-section mt-12">
-            <div className="comparison-card old">
-              <p className="comparison-label" style={{color: '#ef4444'}}>직접 분석</p>
-              <p className="comparison-value" style={{color: '#fca5a5'}}>30시간+</p>
-              <p className="comparison-desc">수작업 키워드 분석</p>
-            </div>
-            <div className="vs-badge">VS</div>
-            <div className="comparison-card new">
-              <p className="comparison-label" style={{color: '#10b981'}}>릴스코드</p>
-              <p className="comparison-value" style={{color: '#6ee7b7'}}>3초</p>
-              <p className="comparison-desc">자동화 분석 완료</p>
+          <div className="comparison-table-section mt-12">
+            <h3 className="comparison-table-title">직원 1명 뽑는 비용 vs 릴스코드</h3>
+
+            <div className="comparison-table">
+              <div className="comparison-table-header">
+                <div className="comparison-table-cell header-label"></div>
+                <div className="comparison-table-cell header-old">직원 채용</div>
+                <div className="comparison-table-cell header-new">릴스코드</div>
+              </div>
+
+              <div className="comparison-table-row">
+                <div className="comparison-table-cell row-label">💰 비용</div>
+                <div className="comparison-table-cell cell-old">월 300만 원<br/><span className="cell-sub">(고정 지출)</span></div>
+                <div className="comparison-table-cell cell-new">29만 원<br/><span className="cell-sub">(평생 무료)</span></div>
+              </div>
+
+              <div className="comparison-table-row">
+                <div className="comparison-table-cell row-label">⏱️ 시간</div>
+                <div className="comparison-table-cell cell-old">자료 조사<br/><span className="cell-highlight-old">30시간</span></div>
+                <div className="comparison-table-cell cell-new">클릭<br/><span className="cell-highlight-new">3초</span></div>
+              </div>
+
+              <div className="comparison-table-row">
+                <div className="comparison-table-cell row-label">📊 결과</div>
+                <div className="comparison-table-cell cell-old">감으로 기획<br/><span className="cell-sub">(실패 확률↑)</span></div>
+                <div className="comparison-table-cell cell-new">데이터 기반<br/><span className="cell-sub">(성공 확률↑)</span></div>
+              </div>
             </div>
           </div>
 
