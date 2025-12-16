@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import {
   Zap,
   Sparkles,
@@ -14,11 +15,18 @@ import {
   ChevronDown,
   TrendingUp,
   User,
-  Star
+  Star,
+  FileSpreadsheet,
+  Database,
+  Download
 } from 'lucide-react'
 import './index.css'
 
 export default function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="min-h-screen">
       {/* Sticky Header */}
@@ -497,11 +505,19 @@ export default function App() {
               href="https://litt.ly/reels_code_official/sale/XdbLaGW"
               target="_blank"
               rel="noopener noreferrer"
-              className="free-trial-banner"
+              className="free-download-banner"
             >
-              <Gift className="w-5 h-5" />
-              <span>구독자 100명인데 조회수 10만? 12월 알고리즘이 선택한 '기적의 영상' 232개 (무료)</span>
-              <ArrowRight className="w-4 h-4" />
+              <div className="download-banner-icon">
+                <Download className="w-6 h-6" />
+              </div>
+              <div className="download-banner-content">
+                <span className="download-banner-title">12월 알고리즘이 선택한 '기적의 영상' 232개</span>
+                <span className="download-banner-subtitle">구독자 100명인데 조회수 10만? 비결을 담은 무료 리스트</span>
+              </div>
+              <div className="download-banner-btn">
+                <span>무료 다운로드</span>
+                <Download className="w-4 h-4" />
+              </div>
             </a>
           </div>
 
@@ -566,6 +582,59 @@ export default function App() {
               <div className="faq-answer">
                 네, 한 번 구매하시면 평생 사용 가능합니다.
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== DATA ONLY PURCHASE ==================== */}
+      <section className="data-only-section">
+        <div className="container">
+          <div className="data-only-card">
+            <div className="data-only-icon">
+              <FileSpreadsheet className="w-12 h-12" />
+            </div>
+
+            <div className="data-only-content">
+              <p className="data-only-label">프로그램은 부담스럽고, '데이터'만 궁금하신가요?</p>
+              <h3 className="data-only-title">
+                [12월 2주] 실시간 떡상 영상 232개 + AI 심층 분석집
+              </h3>
+
+              <div className="data-only-features">
+                <p className="data-only-desc">
+                  무료 리스트 30개로는 부족합니다. 한국/해외 바이럴 영상 232개를 전수 조사했습니다.
+                </p>
+                <ul className="data-only-list">
+                  <li><Check className="w-4 h-4" /> <strong>압도적 볼륨:</strong> 30개 → 232개 (해외 바이럴 포함)</li>
+                  <li><Check className="w-4 h-4" /> <strong>AI 인사이트:</strong> 썸네일/제목/타겟감정 완벽 분석</li>
+                  <li><Check className="w-4 h-4" /> <strong>치킨 한 마리 값(19,900원)</strong>으로 수백 시간의 기획 고민 해결</li>
+                </ul>
+              </div>
+
+              <details className="data-preview-accordion">
+                <summary>🔍 엑셀 파일 구성 미리보기 (클릭)</summary>
+                <div className="data-preview-content">
+                  <p><strong>📋 기본 정보:</strong> 제목, 채널명, 조회수, 게시일, 영상링크</p>
+                  <p><strong>🤖 AI 분석(유료전용):</strong> 썸네일공식, 타겟감정, 바이럴포인트, 벤치마킹 전략</p>
+                </div>
+              </details>
+            </div>
+
+            <div className="data-only-purchase">
+              <div className="data-only-price">
+                <span className="price-original">정가 49,000원</span>
+                <span className="price-sale">19,900<span className="price-unit">원</span></span>
+              </div>
+              <a
+                href="https://litt.ly/reels_code_official/sale/Q0MXsH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-lg data-only-btn"
+              >
+                데이터만 따로 구매하기
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
