@@ -36,13 +36,13 @@ export default function App() {
               이제 <span className="text-blue-400">'데이터'</span>로 승부하세요.
             </h1>
 
-            <p className="animate-fade-in delay-2 text-body-lg mb-10 md:mb-12">
+            <p className="animate-fade-in delay-2 text-body-lg mb-12 md:mb-14">
               매달 나가는 유료 툴 비용은 그만.
               <br />
               단 한 번의 결제로 평생 쓰는 분석 도구와 떡상 데이터를 드립니다.
             </p>
 
-            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 md:mb-10">
+            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-10 md:mb-12">
               <a href="#products" className="btn btn-xl btn-primary">
                 평생 소장 툴 구매하기
                 <ArrowRight className="w-5 h-5" />
