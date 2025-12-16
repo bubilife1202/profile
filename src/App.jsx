@@ -130,10 +130,6 @@ export default function App() {
       <section id="products" className="section">
         <div className="container">
           <div className="section-header content-max">
-            <span className="badge badge-purple mb-4 md:mb-6">
-              <Sparkles className="w-4 h-4" />
-              프리미엄 솔루션
-            </span>
             <h2 className="heading-section mb-3 md:mb-4">입문자부터 전문가까지</h2>
             <p className="text-body-lg">나에게 맞는 단계별 솔루션을 선택하세요</p>
           </div>
@@ -159,7 +155,7 @@ export default function App() {
                 12월 유튜브 떡상 영상 30개를 무료로 확인하고 감을 잡으세요.
               </p>
 
-              <ul className="feature-list mb-10 md:mb-12 flex-grow">
+              <ul className="feature-list mb-14 md:mb-16 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-emerald-500/10">
                     <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
@@ -214,7 +210,7 @@ export default function App() {
                 매달 결제 NO. 프로그램 하나 값으로 평생 소장하는 가성비 끝판왕.
               </p>
 
-              <ul className="feature-list mb-10 md:mb-12 flex-grow">
+              <ul className="feature-list mb-14 md:mb-16 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-yellow-500/10">
                     <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
@@ -271,7 +267,7 @@ export default function App() {
                 직원 3명 몫을 혼자 처리합니다. 월 900만원 아끼는 자동화 솔루션.
               </p>
 
-              <ul className="feature-list mb-10 md:mb-12 flex-grow">
+              <ul className="feature-list mb-14 md:mb-16 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
                     <Brain className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
