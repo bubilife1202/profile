@@ -12,7 +12,9 @@ import {
   Package,
   Shield,
   ChevronDown,
-  TrendingUp
+  TrendingUp,
+  User,
+  Star
 } from 'lucide-react'
 import './index.css'
 
@@ -171,19 +173,23 @@ export default function App() {
       <section className="section">
         <div className="container">
           <div className="achievement-section content-max">
-            <p className="achievement-label">실제 성과</p>
+            <p className="achievement-label">🎉 실제 성과 🎉</p>
             <h2 className="achievement-title">
-              나도 <span style={{color: '#22d3ee'}}>200만</span> 터졌습니다.
+              다음 달, 이 화면의 주인공은<br /><span className="highlight-you">'대표님'</span>입니다.
             </h2>
             <p className="achievement-desc">
-              릴스코드 알고리즘 분석으로 달성한 실제 조회수입니다.
+              알고리즘 분석 도입 2주 차, 실제 달성한 조회수 <span style={{color: '#00FFCC', fontWeight: 700}}>2,000,000</span>회.<br />
+              이제 대표님 차례입니다.
             </p>
             <div className="achievement-image-wrapper">
+              <span className="firework firework-left">🎉</span>
+              <span className="firework firework-right">✨</span>
               <img
                 src="/achievement-2m.png"
                 alt="200만 조회수 달성"
                 className="achievement-image"
               />
+              <div className="achievement-date">2025년 12월 16일 달성</div>
             </div>
           </div>
         </div>
@@ -232,56 +238,104 @@ export default function App() {
         <div className="container" style={{position: 'relative', zIndex: 2}}>
           <div className="section-header content-max">
             <h2 className="heading-section">베타 테스터 500명이 먼저 써보고 극찬했습니다.</h2>
-            <p className="text-body-lg">조작 없는 100% 리얼 후기를 확인하세요</p>
+            <p className="text-body-lg">이미 532명의 크리에이터가 '필수템'으로 선택했습니다.</p>
           </div>
 
           <div className="reviews-grid">
             <div className="review-card">
               <div className="review-header">
-                <span className="review-user">nous****</span>
+                <div className="review-user-info">
+                  <div className="review-avatar">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <span className="review-user">nous****</span>
+                </div>
                 <span className="verified-badge">
                   <Check className="w-3 h-3" />
                   인증됨
                 </span>
+              </div>
+              <div className="review-stars">
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
               </div>
               <p className="review-text">"이게 뭔 신세계인가요? 진짜 미쳤습니다."</p>
             </div>
 
             <div className="review-card">
               <div className="review-header">
-                <span className="review-user">yun.****</span>
+                <div className="review-user-info">
+                  <div className="review-avatar">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <span className="review-user">yun.****</span>
+                </div>
                 <span className="verified-badge">
                   <Check className="w-3 h-3" />
                   인증됨
                 </span>
+              </div>
+              <div className="review-stars">
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
               </div>
               <p className="review-text">"저에게 딱 필요한 것입니다. 3시간 걸리던 거 3초 만에 끝났네요."</p>
             </div>
 
             <div className="review-card">
               <div className="review-header">
-                <span className="review-user">kunp****</span>
+                <div className="review-user-info">
+                  <div className="review-avatar">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <span className="review-user">kunp****</span>
+                </div>
                 <span className="verified-badge">
                   <Check className="w-3 h-3" />
                   인증됨
                 </span>
+              </div>
+              <div className="review-stars">
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
               </div>
               <p className="review-text">"저도 감사해요. 잘 써볼게요. 퀄리티 대박입니다."</p>
             </div>
 
             <div className="review-card">
               <div className="review-header">
-                <span className="review-user">vic.****</span>
+                <div className="review-user-info">
+                  <div className="review-avatar">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <span className="review-user">vic.****</span>
+                </div>
                 <span className="verified-badge">
                   <Check className="w-3 h-3" />
                   인증됨
                 </span>
               </div>
+              <div className="review-stars">
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+                <Star className="w-4 h-4 star-filled" />
+              </div>
               <p className="review-text">"와.. 엄청나요.. 고민했던 시간이 아깝네요."</p>
             </div>
           </div>
 
-          <p className="reviews-summary">그 외에도 532명의 크리에이터가 '필수템'이라고 평가해주셨습니다.</p>
+          <p className="reviews-summary">⭐ 평균 평점 4.9점 — 532명의 크리에이터가 '필수템'으로 선택했습니다.</p>
         </div>
       </section>
 
