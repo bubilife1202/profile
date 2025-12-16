@@ -155,7 +155,7 @@ export default function App() {
                 12월 유튜브 떡상 영상 30개를 무료로 확인하고 감을 잡으세요.
               </p>
 
-              <ul className="feature-list mb-14 md:mb-16 flex-grow">
+              <ul className="feature-list mb-8 md:mb-10 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-emerald-500/10">
                     <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
@@ -210,7 +210,7 @@ export default function App() {
                 매달 결제 NO. 프로그램 하나 값으로 평생 소장하는 가성비 끝판왕.
               </p>
 
-              <ul className="feature-list mb-14 md:mb-16 flex-grow">
+              <ul className="feature-list mb-8 md:mb-10 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-yellow-500/10">
                     <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-400" />
@@ -267,7 +267,7 @@ export default function App() {
                 직원 3명 몫을 혼자 처리합니다. 월 900만원 아끼는 자동화 솔루션.
               </p>
 
-              <ul className="feature-list mb-14 md:mb-16 flex-grow">
+              <ul className="feature-list mb-8 md:mb-10 flex-grow">
                 <li className="feature-item">
                   <div className="feature-icon bg-blue-500/10">
                     <Brain className="w-3.5 h-3.5 md:w-4 md:h-4 text-blue-400" />
@@ -309,9 +309,9 @@ export default function App() {
       </section>
 
       {/* ==================== ADDITIONAL ==================== */}
-      <section className="section py-12 md:py-20">
+      <section className="py-8 md:py-12">
         <div className="container">
-          <div className="card text-center content-max">
+          <div className="card text-center content-max py-8 md:py-10">
             <p className="text-base md:text-lg text-zinc-300 mb-4 md:mb-6">
               아직 AI 솔루션은 부담스럽고, 대본 작성만 필요하신가요?
             </p>

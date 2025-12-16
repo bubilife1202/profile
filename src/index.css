@@ -10,8 +10,8 @@
   --accent-blue: #3b82f6;
   --accent-purple: #8b5cf6;
   --accent-emerald: #10b981;
-  --space-section: clamp(60px, 10vw, 120px);
-  --space-stack: clamp(16px, 3vw, 24px);
+  --space-section: clamp(40px, 6vw, 72px);
+  --space-stack: clamp(14px, 2.5vw, 20px);
 }
 
 *, *::before, *::after {
