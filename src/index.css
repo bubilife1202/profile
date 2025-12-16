@@ -250,12 +250,15 @@ body {
   background: #FEE500;
   color: #191919;
   border: none;
-  box-shadow: 0 4px 20px -4px rgba(254, 229, 0, 0.3);
+  border-radius: 50px;
+  padding: 0 36px;
+  box-shadow: 0 4px 24px rgba(254, 229, 0, 0.4), 0 0 40px rgba(254, 229, 0, 0.15);
 }
 
 .btn-kakao:hover {
   background: #FDD835;
   transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(254, 229, 0, 0.5), 0 0 60px rgba(254, 229, 0, 0.2);
 }
 
 /* ===== CARDS ===== */
@@ -375,7 +378,7 @@ body {
 .video-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 
@@ -572,6 +575,74 @@ body {
   }
 }
 
+/* ===== STORY SECTION ===== */
+.story-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  .story-section {
+    padding: 60px 40px;
+  }
+}
+
+.story-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .story-label {
+    font-size: 15px;
+  }
+}
+
+.story-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .story-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .story-title {
+    font-size: 36px;
+  }
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #aaaaaa;
+}
+
+@media (min-width: 768px) {
+  .story-content {
+    font-size: 18px;
+    gap: 24px;
+  }
+}
+
+.story-content strong {
+  color: #00FFCC;
+}
+
 /* ===== DIVIDER ===== */
 .divider {
   height: 1px;
@@ -713,11 +784,16 @@ body {
 }
 
 .faq-item {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
   margin-bottom: 16px;
   overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .faq-question {
@@ -725,40 +801,70 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 18px 20px;
+  padding: 20px 24px;
   background: transparent;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
+@media (min-width: 768px) {
+  .faq-question {
+    padding: 22px 28px;
+    font-size: 17px;
+  }
+}
+
 .faq-question:hover {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.faq-question svg {
+  flex-shrink: 0;
+  color: #888888;
+}
+
 .faq-answer {
-  padding: 0 20px 18px;
+  padding: 0 24px 20px;
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
+@media (min-width: 768px) {
+  .faq-answer {
+    padding: 0 28px 22px;
+    font-size: 16px;
+  }
+}
+
 /* ===== COMPARISON TABLE ===== */
-.comparison-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.comparison-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   margin: 32px 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .comparison-section {
+    gap: 20px;
+    padding: 0;
+  }
 }
 
 .comparison-card {
-  height: 120px;
-  padding: 24px;
-  border-radius: 16px;
+  flex: 1;
+  min-height: 140px;
+  padding: 40px 24px;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -766,14 +872,83 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .comparison-card {
+    min-height: 160px;
+    padding: 40px 32px;
+  }
+}
+
 .comparison-card.old {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.2);
+  background: #1A1A1A;
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .comparison-card.new {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: #001A10;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.comparison-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .comparison-label {
+    font-size: 18px;
+  }
+}
+
+.comparison-value {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .comparison-value {
+    font-size: 32px;
+  }
+}
+
+.comparison-desc {
+  font-size: 13px;
+  color: #888888;
+}
+
+@media (min-width: 768px) {
+  .comparison-desc {
+    font-size: 14px;
+  }
+}
+
+.vs-badge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.5);
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .vs-badge {
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+  }
 }
 
 /* ===== ANIMATIONS ===== */

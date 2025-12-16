@@ -131,6 +131,32 @@ export default function App() {
 
       <div className="divider" />
 
+      {/* ==================== STORY ==================== */}
+      <section className="section">
+        <div className="container">
+          <div className="story-section content-max">
+            <p className="story-label">왜 만들었냐고요?</p>
+            <h2 className="story-title">
+              솔직히 <span style={{color: '#f472b6'}}>억울해서</span> 만들었습니다.
+            </h2>
+            <div className="story-content">
+              <p>
+                매달 수십만 원씩 내는 분석 툴, 정작 쓰는 기능은 몇 개 안 됩니다.
+                <br />
+                구독 취소하면 데이터도 사라지고, 다시 보려면 또 결제해야 합니다.
+              </p>
+              <p>
+                그래서 <strong>한 번 사면 영원히 내 것</strong>이 되는 도구를 만들었습니다.
+                <br />
+                더 이상 매달 결제할 필요 없이, 평생 사용하세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="divider" />
+
       {/* ==================== PRODUCTS ==================== */}
       <section id="products" className="section" style={{marginBottom: '80px'}}>
         <div className="container">
@@ -162,11 +188,6 @@ export default function App() {
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
                 매달 결제 NO. 프로그램 하나 값으로 평생 소장하는 가성비 끝판왕.
               </p>
-
-              <div className="windows-badge mb-4">
-                <Monitor className="w-3 h-3" />
-                Windows 전용
-              </div>
 
               <ul className="feature-list flex-grow">
                 <li className="feature-item">
@@ -352,32 +373,23 @@ export default function App() {
           </div>
 
           {/* ===== 비교표 ===== */}
-          <div className="comparison-row mt-12">
+          <div className="comparison-section mt-12">
             <div className="comparison-card old">
-              <p className="text-red-400 font-bold text-lg mb-2">직접 분석</p>
-              <p className="text-2xl font-bold text-red-300">30시간+</p>
-              <p className="text-sm text-zinc-400 mt-2">수작업 키워드 분석</p>
+              <p className="comparison-label" style={{color: '#ef4444'}}>직접 분석</p>
+              <p className="comparison-value" style={{color: '#fca5a5'}}>30시간+</p>
+              <p className="comparison-desc">수작업 키워드 분석</p>
             </div>
+            <div className="vs-badge">VS</div>
             <div className="comparison-card new">
-              <p className="text-emerald-400 font-bold text-lg mb-2">릴스코드</p>
-              <p className="text-2xl font-bold text-emerald-300">3초</p>
-              <p className="text-sm text-zinc-400 mt-2">자동화 분석 완료</p>
+              <p className="comparison-label" style={{color: '#10b981'}}>릴스코드</p>
+              <p className="comparison-value" style={{color: '#6ee7b7'}}>3초</p>
+              <p className="comparison-desc">자동화 분석 완료</p>
             </div>
           </div>
 
           {/* ===== FAQ ===== */}
           <div className="faq-section content-max">
             <h3 className="text-xl md:text-2xl font-bold text-center" style={{marginBottom: '40px'}}>자주 묻는 질문</h3>
-
-            <div className="faq-item">
-              <div className="faq-question">
-                <span>환불이 가능한가요?</span>
-                <ChevronDown className="w-5 h-5" />
-              </div>
-              <div className="faq-answer">
-                디지털 상품 특성상 구매 후 환불은 불가능합니다. 무료 체험판으로 먼저 확인해보세요.
-              </div>
-            </div>
 
             <div className="faq-item">
               <div className="faq-question">
@@ -395,7 +407,7 @@ export default function App() {
                 <ChevronDown className="w-5 h-5" />
               </div>
               <div className="faq-answer">
-                네, 한 번 구매하시면 평생 사용 가능하며 업데이트도 무료로 제공됩니다.
+                네, 한 번 구매하시면 평생 사용 가능합니다.
               </div>
             </div>
           </div>
@@ -405,7 +417,7 @@ export default function App() {
       <div className="divider" />
 
       {/* ==================== FOOTER ==================== */}
-      <footer className="py-16 md:py-20">
+      <footer style={{marginTop: '100px', paddingBottom: '80px'}}>
         <div className="container">
           <div className="text-center content-max">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8">
@@ -422,7 +434,7 @@ export default function App() {
               카카오톡 1:1 문의하기
             </a>
 
-            <p className="mt-10 text-sm text-zinc-600">
+            <p className="mt-10 text-sm" style={{color: '#888888'}}>
               © 2025 Reels Code. All rights reserved.
             </p>
           </div>
