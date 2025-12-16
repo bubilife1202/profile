@@ -9,13 +9,31 @@ import {
   Target,
   MessageCircle,
   ArrowRight,
-  Package
+  Package,
+  Shield,
+  ChevronDown,
+  TrendingUp
 } from 'lucide-react'
 import './index.css'
 
 export default function App() {
   return (
     <div className="min-h-screen">
+      {/* Sticky Header */}
+      <header className="sticky-header">
+        <div className="container">
+          <a href="#" className="logo">
+            <div className="logo-icon">
+              <TrendingUp className="w-4 h-4 text-white" />
+            </div>
+            릴스코드
+          </a>
+          <a href="#products" className="header-btn">
+            구매하기
+          </a>
+        </div>
+      </header>
+
       {/* Gradient Background */}
       <div className="gradient-bg">
         <div className="gradient-orb gradient-orb-1" />
@@ -23,13 +41,13 @@ export default function App() {
       </div>
 
       {/* ==================== HERO ==================== */}
-      <section className="hero">
+      <section className="hero" style={{paddingTop: '120px'}}>
         <div className="container">
           <div className="text-center content-max">
             <h1 className="animate-fade-in delay-1 heading-hero mb-8 md:mb-10">
-              유튜브, 아직도 <span className="gradient-text">'감'</span>으로 하시나요?
+              구독자 0명도 터지는
               <br />
-              이제 <span className="text-blue-400">'데이터'</span>로 승부하세요.
+              <span className="gradient-text">알고리즘 치트키</span>
             </h1>
 
             <p className="animate-fade-in delay-2 text-body-lg mb-12 md:mb-14">
@@ -38,9 +56,9 @@ export default function App() {
               단 한 번의 결제로 평생 쓰는 분석 도구와 떡상 데이터를 드립니다.
             </p>
 
-            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-5">
+            <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <a href="#products" className="btn btn-xl btn-primary">
-                평생 소장 툴 구매하기
+                평생 소장하기
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
@@ -54,7 +72,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="animate-fade-in delay-4 mt-5">
+            <div className="animate-fade-in delay-4 mt-6">
               <span className="badge badge-amber">
                 <Zap className="w-4 h-4" />
                 하루 선착순 100명 무료 체험 가능
@@ -68,7 +86,7 @@ export default function App() {
       <section className="section">
         <div className="container">
           <div className="section-header content-max">
-            <h2 className="heading-section">3초 만에 끝나는 키워드 발굴, 직접 확인하세요</h2>
+            <h2 className="heading-section">직접 눈으로 확인하세요</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
@@ -133,6 +151,9 @@ export default function App() {
 
               <h3 className="text-xl md:text-2xl font-bold mb-4">블루오션 키워드 파인더</h3>
 
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="price-strike">월 9,900원</span>
+              </div>
               <div className="flex items-baseline gap-3 mb-6">
                 <span className="price text-white">39,900<span className="price-unit">원</span></span>
                 <span className="text-sm text-zinc-500">평생 소장</span>
@@ -142,28 +163,33 @@ export default function App() {
                 매달 결제 NO. 프로그램 하나 값으로 평생 소장하는 가성비 끝판왕.
               </p>
 
+              <div className="windows-badge mb-4">
+                <Monitor className="w-3 h-3" />
+                Windows 전용
+              </div>
+
               <ul className="feature-list mb-10 flex-grow">
                 <li className="feature-item">
-                  <div className="feature-icon bg-cyan-500/15">
-                    <Check className="w-4 h-4 text-cyan-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>키워드 채굴기(Windows) 영구소장</span>
+                  <span style={{color: '#cccccc'}}>키워드 채굴기 영구소장</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-cyan-500/15">
-                    <Check className="w-4 h-4 text-cyan-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span style={{color: '#cccccc'}}>'빈집(꿀통)' 자동 발굴</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-cyan-500/15">
-                    <Check className="w-4 h-4 text-cyan-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>12월 떡상 데이터 232개</span>
+                  <span style={{color: '#cccccc'}}>12월 떡상 데이터 <strong>232개</strong></span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-cyan-500/15">
-                    <Check className="w-4 h-4 text-cyan-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span style={{color: '#cccccc'}}>AI 심층 분석집</span>
                 </li>
@@ -205,26 +231,26 @@ export default function App() {
 
               <ul className="feature-list mb-10 flex-grow">
                 <li className="feature-item">
-                  <div className="feature-icon bg-yellow-500/15">
-                    <Check className="w-4 h-4 text-yellow-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>떡상 족보 데이터 752개</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>떡상 족보 데이터 <strong>752개</strong></span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-yellow-500/15">
-                    <Check className="w-4 h-4 text-yellow-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span className="font-medium" style={{color: '#e5e5e5'}}>대본 자동 완성 툴 제공</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-yellow-500/15">
-                    <Check className="w-4 h-4 text-yellow-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span className="font-medium" style={{color: '#e5e5e5'}}>트렌드 키워드 분석집</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-yellow-500/15">
-                    <Check className="w-4 h-4 text-yellow-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span className="font-medium" style={{color: '#e5e5e5'}}>업데이트 평생 무료</span>
                 </li>
@@ -263,26 +289,26 @@ export default function App() {
 
               <ul className="feature-list mb-10 flex-grow">
                 <li className="feature-item">
-                  <div className="feature-icon bg-blue-500/15">
-                    <Check className="w-4 h-4 text-blue-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span style={{color: '#cccccc'}}>AI 실시간 트렌드 감지</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-blue-500/15">
-                    <Check className="w-4 h-4 text-blue-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>떡상 족보 752개 파일 무료 증정</span>
+                  <span style={{color: '#cccccc'}}>떡상 족보 <strong>752개</strong> 파일 무료 증정</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-blue-500/15">
-                    <Check className="w-4 h-4 text-blue-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span style={{color: '#cccccc'}}>1초 만에 대본 생성</span>
                 </li>
                 <li className="feature-item">
-                  <div className="feature-icon bg-blue-500/15">
-                    <Check className="w-4 h-4 text-blue-400" />
+                  <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
+                    <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
                   <span style={{color: '#cccccc'}}>업데이트 평생 무료</span>
                 </li>
@@ -309,10 +335,66 @@ export default function App() {
               className="free-trial-banner"
             >
               <Gift className="w-5 h-5" />
-              <span>아직 고민되시나요?</span>
-              <span className="font-semibold">무료 체험판 데이터 먼저 받아보기</span>
+              <span>결제 전, 무료 데이터 먼저 확인하세요</span>
               <ArrowRight className="w-4 h-4" />
             </a>
+          </div>
+
+          {/* ===== 신뢰 배지 ===== */}
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <div className="trust-badge">
+              <Shield className="w-4 h-4" />
+              바이러스 Clean · 100% 안전
+            </div>
+          </div>
+
+          {/* ===== 비교표 ===== */}
+          <div className="comparison-row mt-12">
+            <div className="comparison-card old">
+              <p className="text-red-400 font-bold text-lg mb-2">직접 분석</p>
+              <p className="text-2xl font-bold text-red-300">30시간+</p>
+              <p className="text-sm text-zinc-400 mt-2">수작업 키워드 분석</p>
+            </div>
+            <div className="comparison-card new">
+              <p className="text-emerald-400 font-bold text-lg mb-2">릴스코드</p>
+              <p className="text-2xl font-bold text-emerald-300">3초</p>
+              <p className="text-sm text-zinc-400 mt-2">자동화 분석 완료</p>
+            </div>
+          </div>
+
+          {/* ===== FAQ ===== */}
+          <div className="faq-section content-max">
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-8">자주 묻는 질문</h3>
+
+            <div className="faq-item">
+              <div className="faq-question">
+                <span>환불이 가능한가요?</span>
+                <ChevronDown className="w-5 h-5" />
+              </div>
+              <div className="faq-answer">
+                디지털 상품 특성상 구매 후 환불은 불가능합니다. 무료 체험판으로 먼저 확인해보세요.
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div className="faq-question">
+                <span>Mac에서도 사용 가능한가요?</span>
+                <ChevronDown className="w-5 h-5" />
+              </div>
+              <div className="faq-answer">
+                현재 Windows 전용입니다. Mac 버전은 추후 업데이트 예정입니다.
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div className="faq-question">
+                <span>평생 소장이 정말인가요?</span>
+                <ChevronDown className="w-5 h-5" />
+              </div>
+              <div className="faq-answer">
+                네, 한 번 구매하시면 평생 사용 가능하며 업데이트도 무료로 제공됩니다.
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -343,6 +425,17 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Kakao Button */}
+      <a
+        href="https://open.kakao.com/o/sTYC6FOh"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="floating-kakao"
+        aria-label="카카오톡 상담"
+      >
+        <MessageCircle />
+      </a>
     </div>
   )
 }
