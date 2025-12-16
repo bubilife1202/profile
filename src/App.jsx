@@ -29,7 +29,7 @@ export default function App() {
       {/* ==================== HERO ==================== */}
       <section className="hero">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center content-max">
             <h1 className="animate-fade-in delay-1 heading-hero mb-6 md:mb-8">
               유튜브, 아직도 <span className="gradient-text">'감'</span>으로 하시나요?
               <br />
@@ -71,7 +71,7 @@ export default function App() {
       {/* ==================== VIDEOS ==================== */}
       <section className="section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header content-max">
             <span className="badge badge-blue mb-4 md:mb-6">
               <Play className="w-4 h-4" />
               실제 시연
@@ -129,7 +129,7 @@ export default function App() {
       {/* ==================== PRODUCTS ==================== */}
       <section id="products" className="section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header content-max">
             <span className="badge badge-purple mb-4 md:mb-6">
               <Sparkles className="w-4 h-4" />
               프리미엄 솔루션
@@ -315,7 +315,7 @@ export default function App() {
       {/* ==================== ADDITIONAL ==================== */}
       <section className="section py-12 md:py-20">
         <div className="container">
-          <div className="card text-center">
+          <div className="card text-center content-max">
             <p className="text-base md:text-lg text-zinc-300 mb-4 md:mb-6">
               아직 AI 솔루션은 부담스럽고, 대본 작성만 필요하신가요?
             </p>
@@ -337,7 +337,7 @@ export default function App() {
       {/* ==================== FOOTER ==================== */}
       <footer className="section py-12 md:py-20">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center content-max">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 md:mb-10">
               궁금한 점이 있으신가요?
             </h3>
