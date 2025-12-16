@@ -178,8 +178,8 @@ export default function App() {
               다음 달, 이 화면의 주인공은<br /><span className="highlight-you">'대표님'</span>입니다.
             </h2>
             <p className="achievement-desc">
-              알고리즘 분석 도입 2주 차, 실제 달성한 조회수 <span style={{color: '#00FFCC', fontWeight: 700}}>2,000,000</span>회.<br />
-              이제 대표님 차례입니다.
+              분석기 도입 <span style={{color: '#00FFCC', fontWeight: 700}}>'단 14일'</span> 만에 조회수 0 → <span style={{color: '#00FFCC', fontWeight: 700}}>200만</span> 폭발.<br />
+              죽어있던 채널이 보름 만에 되살아났습니다. 다음은 대표님 차례입니다.
             </p>
             <div className="achievement-image-wrapper">
               <span className="firework firework-left">🎉</span>
