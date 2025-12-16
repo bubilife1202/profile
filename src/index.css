@@ -6,11 +6,11 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
-  --text-tertiary: #52525b;
+  --text-tertiary: #71717a;
   --accent-blue: #3b82f6;
   --accent-purple: #8b5cf6;
   --accent-emerald: #10b981;
-  --space-section: clamp(40px, 6vw, 72px);
+  --space-section: clamp(80px, 12vw, 120px);
   --space-stack: clamp(14px, 2.5vw, 20px);
 }
 
@@ -207,27 +207,30 @@ body {
   }
 }
 
+/* Primary - 단색 보라색 (중앙 카드용) */
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  background: #8b5cf6;
   color: white;
   border: none;
-  box-shadow: 0 4px 20px -4px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 20px -4px rgba(139, 92, 246, 0.5);
 }
 
 .btn-primary:hover {
+  background: #7c3aed;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px -4px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 8px 30px -4px rgba(139, 92, 246, 0.6);
 }
 
+/* Secondary - 테두리만 있는 스타일 (양옆 카드용) */
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
-  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-ghost {
@@ -237,24 +240,6 @@ body {
 
 .btn-ghost:hover {
   background: rgba(255, 255, 255, 0.05);
-}
-
-.btn-emerald {
-  color: var(--accent-emerald);
-  border-color: rgba(16, 185, 129, 0.3);
-}
-
-.btn-emerald:hover {
-  background: rgba(16, 185, 129, 0.1);
-}
-
-.btn-blue {
-  color: var(--accent-blue);
-  border-color: rgba(59, 130, 246, 0.3);
-}
-
-.btn-blue:hover {
-  background: rgba(59, 130, 246, 0.1);
 }
 
 .btn-kakao {
@@ -274,7 +259,7 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 20px;
-  padding: clamp(28px, 6vw, 44px);
+  padding: clamp(24px, 5vw, 32px);
   transition: all 0.3s ease;
   backdrop-filter: blur(8px);
 }
@@ -282,13 +267,13 @@ body {
 @media (min-width: 768px) {
   .card {
     border-radius: 24px;
-    padding: 44px;
+    padding: 32px;
   }
 }
 
 @media (min-width: 1024px) {
   .card {
-    padding: 48px;
+    padding: 40px;
   }
 }
 
@@ -298,13 +283,30 @@ body {
   box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4);
 }
 
+/* 프라이싱 카드 전용 - 더 넉넉한 패딩 */
+.card.product-card {
+  padding: clamp(32px, 6vw, 48px);
+}
+
+@media (min-width: 768px) {
+  .card.product-card {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card.product-card {
+    padding: 48px;
+  }
+}
+
 .card-featured {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.06) 0%, rgba(139, 92, 246, 0.06) 100%);
-  border-color: rgba(139, 92, 246, 0.2);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(236, 72, 153, 0.06) 100%);
+  border-color: rgba(139, 92, 246, 0.3);
 }
 
 .card-featured:hover {
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color: rgba(139, 92, 246, 0.5);
 }
 
 /* ===== BADGE ===== */
@@ -328,38 +330,69 @@ body {
 }
 
 .badge-best {
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  background: #8b5cf6;
   border: none;
   color: white;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.badge-emerald {
-  background: rgba(16, 185, 129, 0.1);
-  border-color: rgba(16, 185, 129, 0.2);
-  color: #34d399;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
 }
 
 .badge-purple {
-  background: rgba(139, 92, 246, 0.1);
-  border-color: rgba(139, 92, 246, 0.2);
-  color: #a78bfa;
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
+  color: #c4b5fd;
 }
 
 .badge-blue {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.2);
-  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #93c5fd;
 }
 
 .badge-amber {
-  background: rgba(245, 158, 11, 0.1);
-  border-color: rgba(245, 158, 11, 0.2);
-  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #fcd34d;
 }
 
 /* ===== VIDEO ===== */
+.video-card {
+  padding: clamp(24px, 5vw, 32px);
+}
+
+@media (min-width: 768px) {
+  .video-card {
+    padding: 32px;
+  }
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .video-header {
+    margin-bottom: 24px;
+  }
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .video-title {
+    font-size: 20px;
+  }
+}
+
 .video-wrapper {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
@@ -387,47 +420,33 @@ body {
   padding: var(--space-section) 0;
 }
 
-@media (min-width: 768px) {
-  .section {
-    padding: var(--space-section) 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section {
-    padding: var(--space-section) 0;
-  }
-}
-
 .section-header {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: clamp(36px, 8vw, 56px);
+  margin-bottom: clamp(40px, 6vw, 56px);
 }
 
 @media (min-width: 768px) {
   .section-header {
-    gap: var(--space-stack);
-    margin-bottom: clamp(40px, 8vw, 64px);
+    gap: 16px;
   }
+}
+
+/* 프라이싱 섹션 헤더 - 간격 줄임 */
+.section-header-compact {
+  margin-bottom: clamp(32px, 5vw, 48px);
 }
 
 /* ===== FEATURE LIST ===== */
 .feature-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-stack);
+  gap: 16px;
 }
 
 @media (min-width: 768px) {
-  .feature-list {
-    gap: 16px;
-  }
-}
-
-@media (min-width: 1024px) {
   .feature-list {
     gap: 18px;
   }
@@ -436,20 +455,22 @@ body {
 .feature-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 14px;
+  gap: 14px;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--text-secondary);
 }
 
 @media (min-width: 768px) {
   .feature-item {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 .feature-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,8 +480,9 @@ body {
 
 @media (min-width: 768px) {
   .feature-icon {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
     border-radius: 8px;
   }
 }
@@ -475,8 +497,14 @@ body {
 
 @media (min-width: 768px) {
   .price {
-    font-size: 40px;
+    font-size: 38px;
   }
+}
+
+.price-unit {
+  font-size: 0.55em;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
 .price-old {
@@ -488,14 +516,14 @@ body {
 /* ===== PRODUCT GRID ===== */
 .product-grid {
   display: grid;
-  gap: clamp(18px, 3vw, 32px);
+  gap: clamp(20px, 4vw, 32px);
   align-items: stretch;
 }
 
 @media (min-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 28px;
   }
 }
 
@@ -541,6 +569,26 @@ body {
   .divider {
     margin: 0 40px;
   }
+}
+
+/* ===== FREE TRIAL BANNER ===== */
+.free-trial-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 100px;
+  color: #22d3ee;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.free-trial-banner:hover {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.3);
+  transform: translateY(-2px);
 }
 
 /* ===== ANIMATIONS ===== */
