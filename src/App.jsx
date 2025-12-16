@@ -89,7 +89,7 @@ export default function App() {
             <h2 className="heading-section">직접 눈으로 확인하세요</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             {/* 비디오 카드 1 */}
             <div className="card video-card">
               <div className="video-header">
@@ -138,6 +138,24 @@ export default function App() {
                 <iframe
                   src="https://www.youtube.com/embed/mzar3HMcxgE?controls=0&modestbranding=1&rel=0"
                   title="AI 쇼츠 레이더 시연영상"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* 비디오 카드 4 */}
+            <div className="card video-card">
+              <div className="video-header">
+                <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-5 h-5 text-emerald-400" />
+                </div>
+                <h3 className="video-title">조회수 급상승 영상 리스트 752개</h3>
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/jlBB_5K2I20?controls=0&modestbranding=1&rel=0"
+                  title="조회수 급상승 영상 리스트 752개"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
