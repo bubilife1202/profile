@@ -237,8 +237,8 @@ export default function App() {
         <div className="reviews-overlay" />
         <div className="container" style={{position: 'relative', zIndex: 2}}>
           <div className="section-header content-max">
-            <h2 className="heading-section">출시 전부터 문의가 빗발치고 있습니다.</h2>
-            <p className="text-body-lg">많은 크리에이터분들이 기다려주신 바로 그 솔루션입니다.</p>
+            <h2 className="heading-section">오픈과 동시에 문의가 폭주하고 있습니다.</h2>
+            <p className="text-body-lg">오래 기다려주신 만큼, 확실한 성능으로 보답하겠습니다.</p>
           </div>
 
           <div className="reviews-grid">
@@ -295,7 +295,7 @@ export default function App() {
             </div>
           </div>
 
-          <p className="reviews-summary">이미 수많은 분들이 '사전 알림'을 신청해주셨습니다.</p>
+          <p className="reviews-summary">이미 발 빠른 크리에이터들은 선점을 시작했습니다.</p>
         </div>
       </section>
 
