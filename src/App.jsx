@@ -624,7 +624,7 @@ export default function App() {
                   무료 리스트 30개로는 부족합니다. 한국/해외 바이럴 영상 232개를 전수 조사했습니다.
                 </p>
                 <ul className="data-only-list">
-                  <li><Check className="w-4 h-4" /> <strong>압도적 볼륨:</strong> 30개 → 232개 (해외 바이럴 포함)</li>
+                  <li><Check className="w-4 h-4" /> <strong>압도적 볼륨:</strong> 30개 → 232개 (해외 바이럴 일부 포함)</li>
                   <li><Check className="w-4 h-4" /> <strong>AI 인사이트:</strong> 썸네일/제목/타겟감정 완벽 분석</li>
                   <li><Check className="w-4 h-4" /> <strong>치킨 한 마리 값(19,900원)</strong>으로 수백 시간의 기획 고민 해결</li>
                 </ul>
