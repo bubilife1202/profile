@@ -539,14 +539,6 @@ export default function App() {
             </a>
           </div>
 
-          {/* ===== 신뢰 배지 ===== */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <div className="trust-badge">
-              <Shield className="w-4 h-4" />
-              바이러스 Clean · 100% 안전
-            </div>
-          </div>
-
           {/* ===== 비교표 ===== */}
           <div className="comparison-table-section mt-12">
             <h3 className="comparison-table-title">직원 1명 뽑는 비용 vs 릴스코드</h3>
