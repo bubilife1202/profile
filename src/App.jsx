@@ -237,8 +237,8 @@ export default function App() {
         <div className="reviews-overlay" />
         <div className="container" style={{position: 'relative', zIndex: 2}}>
           <div className="section-header content-max">
-            <h2 className="heading-section">베타 테스터 500명이 먼저 써보고 극찬했습니다.</h2>
-            <p className="text-body-lg">이미 532명의 크리에이터가 '필수템'으로 선택했습니다.</p>
+            <h2 className="heading-section">출시 전부터 문의가 빗발치고 있습니다.</h2>
+            <p className="text-body-lg">많은 크리에이터분들이 기다려주신 바로 그 솔루션입니다.</p>
           </div>
 
           <div className="reviews-grid">
@@ -248,19 +248,9 @@ export default function App() {
                   <div className="review-avatar">
                     <User className="w-4 h-4" />
                   </div>
-                  <span className="review-user">nous****</span>
+                  <span className="review-user-bold">nous****</span>
                 </div>
-                <span className="verified-badge">
-                  <Check className="w-3 h-3" />
-                  인증됨
-                </span>
-              </div>
-              <div className="review-stars">
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
+                <span className="quote-icon">❝</span>
               </div>
               <p className="review-text">"이게 뭔 신세계인가요? 진짜 미쳤습니다."</p>
             </div>
@@ -271,19 +261,9 @@ export default function App() {
                   <div className="review-avatar">
                     <User className="w-4 h-4" />
                   </div>
-                  <span className="review-user">yun.****</span>
+                  <span className="review-user-bold">yun.****</span>
                 </div>
-                <span className="verified-badge">
-                  <Check className="w-3 h-3" />
-                  인증됨
-                </span>
-              </div>
-              <div className="review-stars">
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
+                <span className="quote-icon">❝</span>
               </div>
               <p className="review-text">"저에게 딱 필요한 것입니다. 3시간 걸리던 거 3초 만에 끝났네요."</p>
             </div>
@@ -294,19 +274,9 @@ export default function App() {
                   <div className="review-avatar">
                     <User className="w-4 h-4" />
                   </div>
-                  <span className="review-user">kunp****</span>
+                  <span className="review-user-bold">kunp****</span>
                 </div>
-                <span className="verified-badge">
-                  <Check className="w-3 h-3" />
-                  인증됨
-                </span>
-              </div>
-              <div className="review-stars">
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
+                <span className="quote-icon">❝</span>
               </div>
               <p className="review-text">"저도 감사해요. 잘 써볼게요. 퀄리티 대박입니다."</p>
             </div>
@@ -317,25 +287,15 @@ export default function App() {
                   <div className="review-avatar">
                     <User className="w-4 h-4" />
                   </div>
-                  <span className="review-user">vic.****</span>
+                  <span className="review-user-bold">vic.****</span>
                 </div>
-                <span className="verified-badge">
-                  <Check className="w-3 h-3" />
-                  인증됨
-                </span>
-              </div>
-              <div className="review-stars">
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
-                <Star className="w-4 h-4 star-filled" />
+                <span className="quote-icon">❝</span>
               </div>
               <p className="review-text">"와.. 엄청나요.. 고민했던 시간이 아깝네요."</p>
             </div>
           </div>
 
-          <p className="reviews-summary">⭐ 평균 평점 4.9점 — 532명의 크리에이터가 '필수템'으로 선택했습니다.</p>
+          <p className="reviews-summary">이미 수많은 분들이 '사전 알림'을 신청해주셨습니다.</p>
         </div>
       </section>
 

@@ -1240,31 +1240,17 @@ body {
   color: #1a1a1a;
 }
 
-.verified-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #10b981;
-  background: rgba(16, 185, 129, 0.1);
-  padding: 3px 6px;
-  border-radius: 100px;
+.review-user-bold {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1a1a1a;
 }
 
-.verified-badge svg {
-  flex-shrink: 0;
-}
-
-.review-stars {
-  display: flex;
-  gap: 2px;
-  margin-bottom: 10px;
-}
-
-.star-filled {
-  color: #FFD700;
-  fill: #FFD700;
+.quote-icon {
+  font-size: 24px;
+  color: #8b5cf6;
+  opacity: 0.6;
+  line-height: 1;
 }
 
 .review-text {
