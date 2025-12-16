@@ -217,6 +217,76 @@ export default function App() {
 
       <div className="divider" />
 
+      {/* ==================== BEST REVIEWS ==================== */}
+      <section className="section reviews-section">
+        <video
+          className="reviews-video-bg"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/251216_review_500.mp4" type="video/mp4" />
+        </video>
+        <div className="reviews-overlay" />
+        <div className="container" style={{position: 'relative', zIndex: 2}}>
+          <div className="section-header content-max">
+            <h2 className="heading-section">베타 테스터 500명이 먼저 써보고 극찬했습니다.</h2>
+            <p className="text-body-lg">조작 없는 100% 리얼 후기를 확인하세요</p>
+          </div>
+
+          <div className="reviews-grid">
+            <div className="review-card">
+              <div className="review-header">
+                <span className="review-user">nous****</span>
+                <span className="verified-badge">
+                  <Check className="w-3 h-3" />
+                  인증됨
+                </span>
+              </div>
+              <p className="review-text">"이게 뭔 신세계인가요? 진짜 미쳤습니다."</p>
+            </div>
+
+            <div className="review-card">
+              <div className="review-header">
+                <span className="review-user">yun.****</span>
+                <span className="verified-badge">
+                  <Check className="w-3 h-3" />
+                  인증됨
+                </span>
+              </div>
+              <p className="review-text">"저에게 딱 필요한 것입니다. 3시간 걸리던 거 3초 만에 끝났네요."</p>
+            </div>
+
+            <div className="review-card">
+              <div className="review-header">
+                <span className="review-user">kunp****</span>
+                <span className="verified-badge">
+                  <Check className="w-3 h-3" />
+                  인증됨
+                </span>
+              </div>
+              <p className="review-text">"저도 감사해요. 잘 써볼게요. 퀄리티 대박입니다."</p>
+            </div>
+
+            <div className="review-card">
+              <div className="review-header">
+                <span className="review-user">vic.****</span>
+                <span className="verified-badge">
+                  <Check className="w-3 h-3" />
+                  인증됨
+                </span>
+              </div>
+              <p className="review-text">"와.. 엄청나요.. 고민했던 시간이 아깝네요."</p>
+            </div>
+          </div>
+
+          <p className="reviews-summary">그 외에도 532명의 크리에이터가 '필수템'이라고 평가해주셨습니다.</p>
+        </div>
+      </section>
+
+      <div className="divider" />
+
       {/* ==================== PRODUCTS ==================== */}
       <section id="products" className="section" style={{marginBottom: '80px'}}>
         <div className="container">
