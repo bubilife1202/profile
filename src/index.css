@@ -514,6 +514,43 @@ body {
   margin-left: 2px;
 }
 
+.price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-original-strike {
+  font-size: 15px;
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.discount-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.discount-badge-purple {
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
+}
+
+.discount-badge-blue {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
 .price-old {
   font-size: 14px;
   color: var(--text-tertiary);

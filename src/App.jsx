@@ -329,9 +329,15 @@ export default function App() {
 
               <h3 className="text-xl md:text-2xl font-bold mb-4">블루오션 키워드 파인더</h3>
 
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="price text-white">39,900<span className="price-unit">원</span></span>
-                <span className="text-sm text-zinc-500">평생 소장</span>
+              <div className="price-box mb-6">
+                <div className="price-row">
+                  <span className="price-original-strike">119,000원</span>
+                  <span className="discount-badge">66% OFF</span>
+                </div>
+                <div className="flex items-baseline gap-3">
+                  <span className="price text-white">39,900<span className="price-unit">원</span></span>
+                  <span className="text-sm text-zinc-500">평생 소장</span>
+                </div>
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
@@ -391,9 +397,15 @@ export default function App() {
 
               <h3 className="text-xl md:text-2xl font-bold mb-4">올인원 대본 패키지</h3>
 
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="price gradient-text">199,000<span className="price-unit">원</span></span>
-                <span className="text-sm text-zinc-500">평생 소장</span>
+              <div className="price-box mb-6">
+                <div className="price-row">
+                  <span className="price-original-strike">299,000원</span>
+                  <span className="discount-badge discount-badge-purple">33% OFF</span>
+                </div>
+                <div className="flex items-baseline gap-3">
+                  <span className="price gradient-text">199,000<span className="price-unit">원</span></span>
+                  <span className="text-sm text-zinc-500">평생 소장</span>
+                </div>
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
@@ -450,9 +462,15 @@ export default function App() {
 
               <h3 className="text-xl md:text-2xl font-bold mb-4">AI 쇼츠 레이더 PRO</h3>
 
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="price text-blue-400">299,000<span className="price-unit">원</span></span>
-                <span className="text-sm text-zinc-500">평생 소장</span>
+              <div className="price-box mb-6">
+                <div className="price-row">
+                  <span className="price-original-strike">599,000원</span>
+                  <span className="discount-badge discount-badge-blue">50% OFF</span>
+                </div>
+                <div className="flex items-baseline gap-3">
+                  <span className="price text-blue-400">299,000<span className="price-unit">원</span></span>
+                  <span className="text-sm text-zinc-500">평생 소장</span>
+                </div>
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
