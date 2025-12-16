@@ -29,7 +29,7 @@ export default function App() {
             릴스코드
           </a>
           <a href="#products" className="header-btn">
-            구매하기
+            평생 소장하기
           </a>
         </div>
       </header>
