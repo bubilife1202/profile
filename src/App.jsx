@@ -439,6 +439,8 @@ export default function App() {
                 </li>
               </ul>
 
+              <p className="value-highlight">👉 아이디어 1개당 260원 꼴 (가성비 최강)</p>
+
               <a
                 href="https://litt.ly/reels_code_official/sale/4CvCp94"
                 target="_blank"

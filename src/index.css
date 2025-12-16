@@ -551,6 +551,18 @@ body {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
 }
 
+.value-highlight {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, rgba(0, 255, 204, 0.15), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00FFCC;
+  text-align: center;
+}
+
 .price-old {
   font-size: 14px;
   color: var(--text-tertiary);
