@@ -361,9 +361,6 @@ export default function App() {
 
               <h3 className="text-xl md:text-2xl font-bold mb-4">블루오션 키워드 파인더</h3>
 
-              <div className="flex items-baseline gap-3 mb-2">
-                <span className="price-strike">월 9,900원</span>
-              </div>
               <div className="flex items-baseline gap-3 mb-6">
                 <span className="price text-white">39,900<span className="price-unit">원</span></span>
                 <span className="text-sm text-zinc-500">평생 소장</span>
