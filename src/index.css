@@ -489,6 +489,7 @@ body {
 .product-grid {
   display: grid;
   gap: clamp(18px, 3vw, 32px);
+  align-items: stretch;
 }
 
 @media (min-width: 768px) {
@@ -504,10 +505,16 @@ body {
   }
 }
 
+.product-grid > .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
 }
 
 /* ===== HERO ===== */
