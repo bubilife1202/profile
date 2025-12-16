@@ -512,16 +512,14 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: clamp(88px, 14vw, 160px) 0 clamp(72px, 10vw, 120px);
+  padding: clamp(100px, 16vw, 140px) 0 clamp(60px, 10vw, 80px);
 }
 
 @media (min-width: 768px) {
   .hero {
-    padding: clamp(112px, 16vw, 180px) 0 clamp(88px, 12vw, 140px);
+    padding: clamp(120px, 18vw, 160px) 0 clamp(72px, 12vw, 100px);
   }
 }
 
