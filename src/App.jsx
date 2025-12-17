@@ -347,7 +347,7 @@ export default function App() {
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
-                매달 결제 NO. 프로그램 하나 값으로 평생 소장하는 가성비 끝판왕.
+                매달 나가는 유료 구독료는 그만. 치킨 두 마리 값으로 '평생' 소장하세요. (추가 비용 0원)
               </p>
 
               <ul className="feature-list flex-grow">
@@ -355,25 +355,25 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>키워드 채굴기 영구소장</span>
+                  <span style={{color: '#cccccc'}}>'될 놈'만 알려주는 신호등 판독기 (무제한)</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>'빈집(꿀통)' 자동 발굴</span>
+                  <span style={{color: '#cccccc'}}>대형 유튜버 없는 '빈집 키워드' 발굴</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>12월 떡상 데이터 <strong>232개</strong></span>
+                  <span style={{color: '#cccccc'}}>[부록] 12월 떡상 족보 <strong>232개</strong> 무료 포함</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>AI 심층 분석집</span>
+                  <span style={{color: '#cccccc'}}>구글 공식 인증 데이터 사용 (정확도 99.9%)</span>
                 </li>
               </ul>
 
