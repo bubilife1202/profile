@@ -355,7 +355,7 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>'될 놈'만 알려주는 신호등 판독기 (무제한)</span>
+                  <span style={{color: '#cccccc'}}>'될 놈'만 알려주는 신호등 판독기</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
