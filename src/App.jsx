@@ -435,7 +435,7 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>업데이트 평생 무료</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>키워드 검색 → 떡상 영상 + 아이디어 즉시 분석</span>
                 </li>
               </ul>
 
@@ -484,25 +484,25 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>AI 실시간 트렌드 감지</span>
+                  <span style={{color: '#cccccc'}}>카테고리 클릭 → 떡상 영상 + 아이디어 즉시 분석</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>떡상 족보 <strong>752개</strong> 파일 무료 증정</span>
+                  <span style={{color: '#cccccc'}}>유튜브 URL 입력 → AI 영상 분석</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>1초 만에 대본 생성</span>
+                  <span style={{color: '#cccccc'}}>키워드 검색 → 떡상 영상 자동 수집</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>업데이트 평생 무료</span>
+                  <span style={{color: '#cccccc'}}>떡상 족보 <strong>752개</strong> + 1초 대본 생성</span>
                 </li>
               </ul>
 
