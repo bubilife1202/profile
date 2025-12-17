@@ -415,7 +415,7 @@ export default function App() {
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
-                대본 작성부터 트렌드 분석까지. 콘텐츠 제작에 필요한 모든 것.
+                3시간 끙끙대던 대본 고민 끝. 키워드만 넣으면 AI가 '팔리는 대본'을 써줍니다.
               </p>
 
               <ul className="feature-list flex-grow">
@@ -423,25 +423,25 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>떡상 족보 데이터 <strong>752개</strong></span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>검증된 '떡상 족보' 데이터 <strong>752개</strong> 제공</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>대본 자동 완성 툴 제공</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>키워드 입력 → 떡상 영상 패턴/비결 즉시 분석</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>트렌드 키워드 분석집</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>쇼츠 최적화 대본(15초/30초/60초) 선택 생성</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>키워드 검색 → 떡상 영상 + 아이디어 즉시 분석</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>클릭을 부르는 'AI 제목 / 훅(Hook) / 해시태그' 추천</span>
                 </li>
               </ul>
 
