@@ -96,89 +96,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* ==================== VIDEOS ==================== */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header content-max">
-            <h2 className="heading-section">직접 눈으로 확인하세요</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* 비디오 카드 1 */}
-            <div className="card video-card">
-              <div className="video-header">
-                <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
-                  <Play className="w-5 h-5 text-orange-400" />
-                </div>
-                <h3 className="video-title">블루오션 키워드 발굴 시연</h3>
-              </div>
-              <div className="video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/qXkAfQcuUwI?controls=0&modestbranding=1&rel=0"
-                  title="블루오션 키워드 발굴 시연"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            {/* 비디오 카드 2 */}
-            <div className="card video-card">
-              <div className="video-header">
-                <div className="w-10 h-10 rounded-xl bg-blue-500/15 flex items-center justify-center flex-shrink-0">
-                  <Monitor className="w-5 h-5 text-blue-400" />
-                </div>
-                <h3 className="video-title">올인원 대본 패키지 시연영상</h3>
-              </div>
-              <div className="video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/ldjVFdfpr8g?controls=0&modestbranding=1&rel=0"
-                  title="올인원 대본 패키지 시연영상"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            {/* 비디오 카드 3 */}
-            <div className="card video-card">
-              <div className="video-header">
-                <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center flex-shrink-0">
-                  <Sparkles className="w-5 h-5 text-purple-400" />
-                </div>
-                <h3 className="video-title">AI 쇼츠 레이더 시연영상</h3>
-              </div>
-              <div className="video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/mzar3HMcxgE?controls=0&modestbranding=1&rel=0"
-                  title="AI 쇼츠 레이더 시연영상"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-
-            {/* 비디오 카드 4 */}
-            <div className="card video-card">
-              <div className="video-header">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
-                  <TrendingUp className="w-5 h-5 text-emerald-400" />
-                </div>
-                <h3 className="video-title">조회수 급상승 영상 리스트 752개</h3>
-              </div>
-              <div className="video-wrapper">
-                <iframe
-                  src="https://www.youtube.com/embed/jlBB_5K2I20?controls=0&modestbranding=1&rel=0"
-                  title="조회수 급상승 영상 리스트 752개"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <div className="divider" />
 
       {/* ==================== ACHIEVEMENT ==================== */}
@@ -308,6 +225,91 @@ export default function App() {
           </div>
 
           <p className="reviews-summary">이미 발 빠른 크리에이터들은 선점을 시작했습니다.</p>
+        </div>
+      </section>
+
+      <div className="divider" />
+
+      {/* ==================== VIDEOS ==================== */}
+      <section className="section">
+        <div className="container">
+          <div className="section-header content-max">
+            <h2 className="heading-section">직접 눈으로 확인하세요</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {/* 비디오 카드 1 */}
+            <div className="card video-card">
+              <div className="video-header">
+                <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center flex-shrink-0">
+                  <Play className="w-5 h-5 text-orange-400" />
+                </div>
+                <h3 className="video-title">블루오션 키워드 발굴 시연</h3>
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/qXkAfQcuUwI?controls=0&modestbranding=1&rel=0"
+                  title="블루오션 키워드 발굴 시연"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* 비디오 카드 2 */}
+            <div className="card video-card">
+              <div className="video-header">
+                <div className="w-10 h-10 rounded-xl bg-blue-500/15 flex items-center justify-center flex-shrink-0">
+                  <Monitor className="w-5 h-5 text-blue-400" />
+                </div>
+                <h3 className="video-title">올인원 대본 패키지 시연영상</h3>
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/ldjVFdfpr8g?controls=0&modestbranding=1&rel=0"
+                  title="올인원 대본 패키지 시연영상"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* 비디오 카드 3 */}
+            <div className="card video-card">
+              <div className="video-header">
+                <div className="w-10 h-10 rounded-xl bg-purple-500/15 flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-5 h-5 text-purple-400" />
+                </div>
+                <h3 className="video-title">AI 쇼츠 레이더 시연영상</h3>
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/mzar3HMcxgE?controls=0&modestbranding=1&rel=0"
+                  title="AI 쇼츠 레이더 시연영상"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            {/* 비디오 카드 4 */}
+            <div className="card video-card">
+              <div className="video-header">
+                <div className="w-10 h-10 rounded-xl bg-emerald-500/15 flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-5 h-5 text-emerald-400" />
+                </div>
+                <h3 className="video-title">조회수 급상승 영상 리스트 752개</h3>
+              </div>
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/jlBB_5K2I20?controls=0&modestbranding=1&rel=0"
+                  title="조회수 급상승 영상 리스트 752개"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
