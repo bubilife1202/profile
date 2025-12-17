@@ -61,9 +61,13 @@ export default function App() {
             </h1>
 
             <p className="animate-fade-in delay-2 text-body-lg" style={{marginBottom: '40px'}}>
-              매달 나가는 유료 툴 비용은 그만.
+              <span style={{color: '#f59e0b'}}>⚠️ 경고</span>
               <br />
-              단 한 번의 결제로 평생 쓰는 분석 도구와 떡상 데이터를 드립니다.
+              남들은 이미 '정답지(데이터)'를 보고 베끼는데,
+              <br />
+              혼자서 '어떤 주제 찍지?' 밤새 고민하고 계신가요?
+              <br />
+              <strong style={{color: 'white'}}>시행착오 1년, 오늘 단 하루 만에 끝내드립니다.</strong>
             </p>
 
             <div className="animate-fade-in delay-3 flex flex-col sm:flex-row gap-4 justify-center">
