@@ -537,8 +537,8 @@ export default function App() {
                 <Download className="w-6 h-6" />
               </div>
               <div className="download-banner-content">
-                <span className="download-banner-title">12월 알고리즘이 선택한 '기적의 영상' 232개</span>
-                <span className="download-banner-subtitle">구독자 100명인데 조회수 10만? 비결을 담은 무료 리스트</span>
+                <span className="download-banner-title">12월 알고리즘이 선택한 '기적의 영상' 30개 무료 공개</span>
+                <span className="download-banner-subtitle">구독자 100명인데 조회수 10만? 비결을 담은 무료 샘플</span>
               </div>
               <div className="download-banner-btn">
                 <span>무료 다운로드</span>
