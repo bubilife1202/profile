@@ -494,7 +494,7 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>돈 되는 '꿀통 카테고리' 탑재 → 클릭 한 번에 떡상 영상 소환</span>
+                  <span style={{color: '#cccccc'}}><strong>(PRO 전용)</strong> 돈 되는 '꿀통 카테고리' → 클릭 한 번에 떡상 영상 소환</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
