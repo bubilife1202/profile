@@ -435,7 +435,7 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span className="font-medium" style={{color: '#e5e5e5'}}>쇼츠 최적화 대본(15초/30초/60초) 선택 생성</span>
+                  <span className="font-medium" style={{color: '#e5e5e5'}}>쇼츠 최적화 대본(15초/30초/60초) 자동 생성</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
