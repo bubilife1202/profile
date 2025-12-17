@@ -482,7 +482,7 @@ export default function App() {
               </div>
 
               <p className="text-base leading-relaxed mb-8" style={{color: '#cccccc'}}>
-                직원 3명 몫을 혼자 처리합니다. 월 900만원 아끼는 자동화 솔루션.
+                직원 3명 월급 아끼세요. 기획부터 대본까지 혼자서 끝내는 '유튜브 공장' 솔루션.
               </p>
 
               <ul className="feature-list flex-grow">
@@ -490,25 +490,25 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}><strong>돈버는 카테고리</strong> 클릭 → 떡상 영상 + 아이디어 즉시 분석</span>
+                  <span style={{color: '#cccccc'}}>돈 되는 '꿀통 카테고리' 탑재 → 클릭 한 번에 떡상 영상 소환</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>유튜브 URL 입력 → AI 영상 분석</span>
+                  <span style={{color: '#cccccc'}}><strong>(PRO 전용)</strong> 경쟁사 URL 입력 → 대박 비결/패턴 낱낱이 분석</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>키워드 검색 → 떡상 영상 자동 수집</span>
+                  <span style={{color: '#cccccc'}}>키워드 검색 한 번으로 → 숨겨진 '조회수 꿀통' 영상 자동 수집</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>떡상 족보 <strong>752개</strong> + 1초 대본 생성</span>
+                  <span style={{color: '#cccccc'}}>수집한 소재로 '15초 / 30초 / 60초' 맞춤 대본 즉시 생성</span>
                 </li>
               </ul>
 
