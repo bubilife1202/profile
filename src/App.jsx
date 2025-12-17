@@ -488,7 +488,7 @@ export default function App() {
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
                     <Check className="w-4 h-4" style={{color: '#00FFCC'}} />
                   </div>
-                  <span style={{color: '#cccccc'}}>카테고리 클릭 → 떡상 영상 + 아이디어 즉시 분석</span>
+                  <span style={{color: '#cccccc'}}><strong>돈버는 카테고리</strong> 클릭 → 떡상 영상 + 아이디어 즉시 분석</span>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon" style={{background: 'rgba(0, 255, 204, 0.15)'}}>
