@@ -382,10 +382,14 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-lg btn-secondary w-full"
-                style={{marginTop: '32px'}}
+                style={{marginTop: '32px', flexDirection: 'column', gap: '4px', padding: '16px 24px'}}
               >
-                39,900원에 시작하기
-                <ArrowRight className="w-5 h-5" />
+                <span style={{fontSize: '11px', color: '#FF6B6B', fontWeight: '600'}}>🔥 연말 특가 · 곧 정가 복귀</span>
+                <span style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+                  <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '14px'}}>39,900원</span>
+                  <span>29,900원에 시작하기</span>
+                  <ArrowRight className="w-5 h-5" />
+                </span>
               </a>
             </div>
 
@@ -517,10 +521,14 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-lg btn-secondary w-full"
-                style={{marginTop: '32px'}}
+                style={{marginTop: '32px', flexDirection: 'column', gap: '4px', padding: '16px 24px'}}
               >
-                299,000원에 시작하기
-                <ArrowRight className="w-5 h-5" />
+                <span style={{fontSize: '11px', color: '#FF6B6B', fontWeight: '600'}}>🔥 연말 특가 · 곧 정가 복귀</span>
+                <span style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+                  <span style={{textDecoration: 'line-through', opacity: 0.5, fontSize: '14px'}}>299,000원</span>
+                  <span>239,000원에 시작하기</span>
+                  <ArrowRight className="w-5 h-5" />
+                </span>
               </a>
             </div>
           </div>
