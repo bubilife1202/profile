@@ -117,6 +117,7 @@ export default function App() {
                 src="/achievement-2m.png"
                 alt="200만 조회수 달성"
                 className="achievement-image"
+                loading="lazy"
               />
               <div className="achievement-date">2025년 12월 16일 달성</div>
             </div>
@@ -160,6 +161,7 @@ export default function App() {
           loop
           muted
           playsInline
+          preload="none"
         >
           <source src="/251216_review_500.mp4" type="video/mp4" />
         </video>
@@ -252,6 +254,7 @@ export default function App() {
                   title="블루오션 키워드 발굴 시연"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -270,6 +273,7 @@ export default function App() {
                   title="올인원 대본 패키지 시연영상"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -288,6 +292,7 @@ export default function App() {
                   title="AI 쇼츠 레이더 시연영상"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -306,6 +311,7 @@ export default function App() {
                   title="조회수 급상승 영상 리스트 752개"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
             </div>
